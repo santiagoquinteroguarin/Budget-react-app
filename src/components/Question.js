@@ -1,9 +1,11 @@
 import React, { Fragment, useState } from 'react';
 import Error from './Error';
 
-const Question = () => {
+const Question = (props) => {
 
-    // ?1. create state
+    const { setSavedBudget, setSavedRemaining} = props;
+
+    // ?1. state defined
     const [amount, setSavedAmount] = useState(0);
     const [error, setSavedError] = useState(false);
 
@@ -24,6 +26,10 @@ const Question = () => {
 
         // ?5. check validation
         setSavedError(false);
+
+        // ?6.
+        setSavedBudget(amount);
+        setSavedRemaining(amount);
     }
 
     return (
