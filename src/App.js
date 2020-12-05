@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hola Mundo!</h1>
+    <div className="container">
+      <header>
+        <h1>Presupuesto Semanal</h1>
+      </header>
     </div>
   );
 }
