@@ -3,7 +3,7 @@ import Error from './Error';
 
 const Question = (props) => {
 
-    const { setSavedBudget, setSavedRemaining} = props;
+    const { setSavedBudget, setSavedRemaining, setUpdateQuestion} = props;
 
     // ?1. state defined
     const [amount, setSavedAmount] = useState(0);
@@ -30,6 +30,7 @@ const Question = (props) => {
         // ?6.
         setSavedBudget(amount);
         setSavedRemaining(amount);
+        setUpdateQuestion(false);
     }
 
     return (
