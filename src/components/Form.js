@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Error from './Error';
 import shortid from 'shortid';
 
-const Form = ({addNewExpense}) => {
+const Form = ({setSavedExpense, setSavedCreateExpense}) => {
 
     // ?8. state defined
     const [name, setSavedName] = useState('');
@@ -29,7 +29,8 @@ const Form = ({addNewExpense}) => {
         }
 
         // ?12. pass the expense to the main component
-        addNewExpense(expense);
+        setSavedExpense(expense);
+        setSavedCreateExpense(true);
 
         //  ?13. reset form
         setSavedName('');
