@@ -34,7 +34,7 @@ function App() {
       // reset to false
       setSavedCreateExpense(false);
     }
-  }, [expense]);
+  }, [expense, createExpense, expenses, remaining]);
 
   return (
     <div className="container">
