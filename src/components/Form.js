@@ -1,8 +1,26 @@
 import React, { useState } from 'react';
 
 const Form = () => {
+
+    // ?8. state defined
+    const [name, setSavedName] = useState('');
+    const [amount, setSavedAmount] = useState(0);
+
+    // ?9. when user added to spendint
+    const AddExpense = (e) => {
+        e.preventDefault();
+        
+        // ?10. validation
+
+        // ?11. build the expense
+
+        // ?12. pass the expense to the main component
+
+        //  ?13. reset form
+    }
+
     return (
-        <form action="">
+        <form onSubmit={AddExpense}>
             <h2>Agrega tus gastos aquí</h2>
 
             <div className="campo">
@@ -11,6 +29,9 @@ const Form = () => {
                     type="text"
                     className="u-full-width"
                     placeholder="Ej. Transporte"
+                    // ?7.
+                    value={name}
+                    onChange={e => setSavedName(e.target.value)}
                 />
             </div>
 
@@ -20,6 +41,9 @@ const Form = () => {
                     type="number"
                     className="u-full-width"
                     placeholder="Ej. 500"
+                    // ?7.
+                    value={amount}
+                    onChange={e => setSavedAmount(parseInt(e.target.value, 10))}
                 />
             </div>
 
