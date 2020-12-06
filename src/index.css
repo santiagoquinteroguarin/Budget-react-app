@@ -24,16 +24,16 @@ header {
     border-radius: 20px;
 }
 
-.presupuesto p{
+.expenses p{
     margin-bottom: 0;
     font-weight: bold;
 }
 
-.presupuesto p span {
+.expenses p span {
     font-weight: normal;
 }
 
-#gastos {
+#expenses {
     margin-bottom: 30px;
 }
 
@@ -94,28 +94,28 @@ h2 {
     border-color: #ffeeba;
 }
 
-.gastos-realizados  {
+.expenses-executed  {
     margin-bottom: 2rem;
 }
-.gastos-realizados li{
+.expenses-executed li{
     list-style: none;
     margin-bottom: 0rem;
     border-bottom: 1px solid #e1e1e1;
     padding: 1rem 0;
 }
 
-.gastos-realizados li:last-of-type {
+.expenses-executed li:last-of-type {
     margin-bottom: 0!important;
 }
 
-.gastos-realizados li p {
+.expenses-executed li p {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:0;
 }
 
-.gastos-realizados li p .gasto {
+.expenses-executed li p .expense {
     background-color: #004085;
     padding: 1rem;
     color:white;
