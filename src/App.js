@@ -3,6 +3,7 @@ import './index.css';
 import Question from './components/Question';
 import Form from './components/Form';
 import List from './components/List';
+import ControlBudget from './components/ControlBudget';
 
 function App() {
 
@@ -44,6 +45,11 @@ function App() {
               <div className="one-half column">
                 <List 
                   expenses={expenses}
+                />
+
+                <ControlBudget 
+                  budget={budget}
+                  remaining={remaining}
                 />
               </div>
             </div>
