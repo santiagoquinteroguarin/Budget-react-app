@@ -70,7 +70,7 @@ const Form = ({setSavedExpense, setSavedCreateExpense}) => {
             <input 
                 type="submit"
                 className="button-primary u-full-width"
-                value="Agredar Gasto"
+                value="Agregar Gasto"
             />
         </form>
     );
