@@ -10,6 +10,16 @@ function App() {
   const [remaining, setSavedRemaining] = useState(0);
   // ?7.
   const [showquestion, setUpdateQuestion] = useState(true);
+  // ?12. 
+  const [expenses, setSavedExpenses] = useState([]);
+
+  // ! when added a new expense
+  const addNewExpense = (expense) => {
+    setSavedExpenses([
+      ...expenses,
+      expense
+    ])
+  }
 
   return (
     <div className="container">
@@ -27,7 +37,7 @@ function App() {
           ) : (
             <div className="row">
               <div className="one-half column">
-                <Form />
+                <Form addNewExpense={addNewExpense}/>
               </div>
 
               <div className="one-half column">
